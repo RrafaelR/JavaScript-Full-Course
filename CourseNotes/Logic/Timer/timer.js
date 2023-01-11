@@ -19,16 +19,20 @@ const startClock = ()=>{
     }, 1000); 
 }
 
-start.addEventListener('click', function (event){
-    startClock();
-});
-
-pause.addEventListener('click', function (event){
-    clearInterval(timer);
-});
-
-reset.addEventListener('click', function (event){
-    clearInterval(timer);
-    seconds = 0;
-    clock.innerHTML = getTimeFromSeconds(seconds);
+document.addEventListener('click', (e) => {
+    if(e.target.classList.contains('start')){
+        clearInterval(timer);
+        startClock();
+        clock.classList.remove('paused');
+    }
+    if(e.target.classList.contains('pause')){
+        clearInterval(timer);
+        clock.classList.add('paused');
+    }
+    if(e.target.classList.contains('reset')){
+        clearInterval(timer);
+        seconds = 0;
+        clock.innerHTML = getTimeFromSeconds(seconds);
+        clock.classList.remove('paused');
+    }
 });
