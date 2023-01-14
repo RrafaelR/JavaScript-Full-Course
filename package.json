@@ -1,0 +1,19 @@
+{
+  "name": "javascript-full-course",
+  "version": "1.0.0",
+  "description": "Repositiry for save the information learned on JS course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RrafaelR/JavaScript-Full-Course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RrafaelR/JavaScript-Full-Course/issues"
+  },
+  "homepage": "https://github.com/RrafaelR/JavaScript-Full-Course#readme"
+}
