@@ -6,7 +6,7 @@ function Pessoa (nome, sobrenome){
     const internMethod = () =>{
         console.log('It´s a private method');
     };
-
+    //similar to Pessoa.nome = nome;
     this.nome = nome;
     this.sobrenome = sobrenome;
 
