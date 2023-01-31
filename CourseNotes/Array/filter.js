@@ -1,4 +1,4 @@
-//Filter -> aways return array with filtered elements
+//Filter -> aways return array with filtered elements, don't modified the elements
 // Filter (Basic)
 // Return numbers > 10
 const numbers = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
